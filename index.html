@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailoredTaste - Movie Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        #movieRecommendations p {
+            margin: 10px 0;
+            padding: 5px;
+            background: #eee;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TailoredTaste</h1>
+        <p>Your personal movie recommendation hub.</p>
+    </header>
+    <section>
+        <h2>Discover Movies Tailored to Your Taste</h2>
+        <!-- Embed Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyUfm5YUjLZx8cR8jcsdzGTJXHTeaqZj-GbkDzcHZ_Yut_zg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </section>
+    <section>
+        <h2>Find a Movie</h2>
+        <label for="genre">Choose a genre:</label>
+        <select id="genre">
+            <!-- Options will be populated here -->
+        </select>
+        <button type="button" onclick="filterMovies()">Get Recommendations</button>
+    </section>
+    <section id="movieRecommendations">
+        <h2>Recommendations</h2>
+        <!-- Recommendations will be listed here -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
